@@ -1,0 +1,124 @@
+#calendar-controller{
+    width:20%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#calendar-container{
+    padding: 10px;
+    width: 80%;
+    height: 240px;
+    text-align: center;
+    border: 1px solid#eee;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align:center;
+    font-family: Arial;
+    background-image: linear-gradient(#b8fcdd,#cecaca);
+}
+
+#calendar-container>div{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#calendar-month-year{
+    margin: 5px;
+}
+
+#calendar-dates>table>tr>td{
+    padding: 5px;
+}
+
+.selectedDate{
+    background-color:#00f3cf;
+}
+
+#controller{
+    width:80%;
+    margin-right:auto;
+    padding:10px;
+    border: 1px solid#eee;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align:center;
+    font-family: Arial;
+
+}
+
+#day,#month,#year{
+    width:85%;
+}
+
+#start,#clear{
+    background-color:#c8f7f0; 
+    margin-left:8%;
+    margin-right:auto;
+    border:1px solid #eee;
+    border-radius:10px;
+  }
+
+#start:hover,#clear:hover{
+    background-color:#8ef2e3;
+}
+
+#start:focus, #clear:focus{
+    background-color:#55a89b;
+}
+
+#calendar-appointments{
+    float:left;
+    margin-right:200px;
+    margin-top:-400px;
+}
+
+#calendar-scroll{
+    padding:5px;
+    float:right;
+    margin-left:100px;
+    margin-right:90px;
+    margin-top:-400px;
+    border:1px solid rgb(44, 44, 44);
+    background-image: linear-gradient(#b8fcdd,#cecaca);
+    border-radius: 10px;
+}
+
+.scroll-buttons{
+    padding:2px;
+    background-color:#626464;
+    border:1px solid rgb(44, 44, 44);
+    color:rgb(238, 238, 238);
+    border-radius:10px;
+}
+
+#appointments-list{
+    padding:2px;
+    background-color:#626464;
+    border:1px solid rgb(44, 44, 44);
+    color:rgb(238, 238, 238);
+    border-radius:10px;
+}
+
+#event-check{
+    padding:5px;
+    float:right;
+    margin-left:100px;
+    margin-right:90px;
+    margin-top:-200px;
+    border:1px solid rgb(44, 44, 44);
+    background-image: linear-gradient(#b8fcdd,#cecaca);
+    border-radius: 10px;
+}
+
+#current-event{
+    size: "100";
+}
+
+.styler{
+    background-color:#1d443e; 
+    margin-left:15%;
+    margin-right:auto;
+    border:1px solid #eee;
+    border-radius:10px;
+    color:white;
+}

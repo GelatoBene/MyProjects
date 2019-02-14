@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style = "margin-left:50%; margin-top:2%">Calendar</title>
+        <link type="text/css" rel="stylesheet" href="projectjs-dom-calendar-css.css">
+        <script type="text/javascript" src="projectjs-dom-calendar-js.js"></script>
+    </head>
+    <body>
+    <!-- div for the calendar, date/month/year controls, and buttons -->
+        <div id ="calendar-controller">
+
+        <div id="calendar-container">
+
+            <div id="calendar-header">
+                <span id="calendar-month-year"></span>
+            </div>
+
+            <div id="calendar-dates">
+
+            </div>          
+        </div>
+
+        <div id = "controller">
+        Day:
+        <input type = "number" id="day" class="calendar-date-field"><br>
+        Month:
+        <input type = "number" id="month" class="calendar-date-field"><br>
+        Year:
+        <input type = "number" id="year" class="calendar-date-field"><br>
+        </div>
+
+        <div id="controller-buttons">
+                <button id="start" onclick = "createCalendar();">Calendar</button>
+                <button id="clear" onclick = "calendarClear();">Clear Calendar</button><br>
+                <button class="styler" onclick = "styleOne();">Style1</button>
+                <button class="styler" onclick = "styleTwo();">Style2</button><br>
+                <button class="styler" onclick = "styleThree();">Style3</button>
+                <button class="styler" onclick = "styleFour();">Style4</button>
+        </div>
+
+        </div>   
+<!-- div for ALL of the appointments made -->
+        <div id="calendar-appointments">
+            Appointment : <input type = "text" id ="appointment-name"><br>
+            <button onclick = "addAppointment();" style = "margin: 2px 2px";>Add Appointment</button><br>
+            <button onclick = "hideAppointments();" style = "margin: 2px 2px";>Hide Appointments</button><br>
+            <button onclick = "showAppointments();" style = "margin: 2px 2px";>Show Appointments</button><br>
+
+            <ul id="appointments-list">
+                <p>All Events:</p>
+            </ul>
+        </div>
+
+<!-- div for switching between days/months/years -->
+        <div id="calendar-scroll">
+
+            <button onclick ="nextDay();createCalendar();" class = "scroll-buttons">NextDay</button> 
+            <button onclick ="previousDay();createCalendar();" class = "scroll-buttons">PrevioustDay</button><br>
+
+            <button onclick ="nextMonth();createCalendar();" class = "scroll-buttons">NextMonth</button>
+            <button onclick ="previousMonth();createCalendar();" class = "scroll-buttons">PrevioustMonth</button><br>
+
+            <button onclick ="nextYear();createCalendar();" class = "scroll-buttons">NextYear</button>
+            <button onclick ="previousYear();createCalendar();" class = "scroll-buttons">PreviousYear</button><br>
+
+        </div>
+    <!-- div for displaying events for the currently selected day-->
+       <div id="event-check">
+           <button onclick = "callCurrentEvent()">Message current event</button><br>
+           Event:<br>
+           <textarea cols = "20" rows ="10" id="current-event"></textarea><br>
+       </div>
+    </body>
+</html>
