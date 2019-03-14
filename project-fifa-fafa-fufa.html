@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <div onclick = "UserTracker()">
+<ul type="text" id="TeamResults" style="margin-right:50%;background-color:#56585b;color:beige;padding-right:2%" >Matches:</ul><br>
+
+Enter the ammount of matches you want to view:<input type="number" id="TeamResultsQuantity"> 
+
+<button onclick = "GenerateTeamResults()">Generate Team Scores</button><br>
+
+Stadium ID:<input type ="text" id="SearchLocation" style="margin-top:20px;width:80px" maxlength="50"><br> Result:<textarea type ="text" id= "FindLocation" rows="2" style="width:80%"></textarea><br>
+<button onclick = "VenueFinder()">Search Location</button><br>
+
+Team_ID:<input type ="text" id="SearchTeam" style="margin-top:20px;width:80px" maxlength="50"><br> Result:<textarea type ="text" id= "FindTeam" rows="2" style="width:80%"></textarea><br>
+<button onclick = "NameFinder()">Search Team</button><br>
+
+Group_ID:<input type ="text" id="SearchGroup" style="margin-top:20px;width:80px" maxlength="50" ><br> Result:<textarea type ="text" id= "FindGroup" rows="2" style="width:80%"></textarea><br>
+<button onclick = "GroupFinder()">Search Group</button><br>
+
+<ul id="UserTrackerData" style="background-color:black;color:white;margin-top:20px;margin-right:50%;margin-top:20px">User Data: </ul> 
+    </div>
+    
+        
+    
+<script src="project-fifa-fafa-fufa.js"></script>
+
+</head>
+<body>
+    
+</body>
+</html>
